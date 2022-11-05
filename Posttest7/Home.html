@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Wear Time</title>
+        <link rel ="stylesheet"  href = "Home.css">
+    </head>
+    <body>
+        <div class ="style">
+            <div class="navbar">
+                    <div class="logo">
+                        <a href = "#"></a>
+                        <p id="web">
+                            Wear Time
+                            <script>
+                                document.getElementById("web").onclick=tampil;
+
+                                function tampil(){
+                                    document.getElementById("web").innerHTML ="Smart Watch";
+                                }
+                            </script>
+
+                        </p> 
+                    </div>
+                    
+                
+                    <img src="iwatchh.jpeg" alt ="" style = "width: 10%" style = "height: 10px";>
+                
+            
+
+                    <div class = "tagline">
+                        <p id = "tulisan">
+                            Hampir sebagian orang selalu menggunakan watch atau smartwatch di setiap aktivitasnya. Platform yang bernama Wear Time 
+                            dapat membantu anda untuk mencari berbagai macam merk Smartwatch
+                        <p>
+                        <script>
+                            document.getElementById("tulisan").addEventListener("mouseenter", mouseEnter);
+                            document.getElementById("tulisan").addEventListener("mouseleave", mouseLeave);
+
+                            function mouseEnter(){
+                                document.getElementById("tulisan").style.color="orange";
+                            }
+
+                            function mouseLeave(){
+                                document.getElementById("tulisan").style.color = "white";
+                            }
+                        </script>
+                    </div>  
+                    <div id="theme">
+                        <div onclick="setDarkMode(true)" id="darkButton" class="icon"><img src="icon.jpg"></div>
+                        <div onclick="setDarkMode(false)" id ="lightButton" class="is-hidden"><img src="icon.jpg" ></div>
+                    </div>
+                    <script src="main.js"></script>
+            </div>
+        </div>
+
+        <footer>
+           <div class = "outer-footer">
+            Copyright &copy; 2022 Desgin by SherinaLaraswati
+        </footer>
+    </body>
+</html>
